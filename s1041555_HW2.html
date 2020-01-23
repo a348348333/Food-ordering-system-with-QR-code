@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>線上餐點訂購網頁</title>
+<style type = "text/css">
+	#yellow {color:yellow;}
+</style>
+<link rel = "stylesheet" type = "text/css" href = "s1041555_HW2.css">
+</head>
+<body>
+<h1>密密送專頁</h1>
+<form method = "post" action = "s1041555_HW2.php">
+<p><label>姓名:<input name = "name" type = "text" size = "12" placeholder = "陳大文" required></label></p>
+<p><label>Email:<input name = "email" type = "email" placeholder = "Enter a email address" required></label></p>
+<p><label>電話:<input name = "tel" type = "text" placeholder = "(##) ###-####" pattern = "\([0-9]{2}(\) [0-9]{3}\-\d|\) [0-9]{4}\-\d|\d\) [0-9]{3}\-)\d{3}" required></label></p>
+<p><label>外送地址:<input name = "address" type = "text" required></label></p>
+    <p>
+    <label>請選擇餐點
+        <select name = "set">
+            <option selected>A</option>
+            <option>B</option>
+			<option>C</option>
+			<option>D</option>
+        </select>
+    </label>
+    </p>
+    
+    <p style = "color:red;">
+    <strong>對本訂購網頁滿意度:</strong><br>
+    <label><input name = "rating" type = "radio" value = "good" checked>
+    滿意</label>
+    <label><input name = "rating" type = "radio" value = "normal">普通</label>
+    <label><input name = "rating" type = "radio" value = "bad">不滿意</label>
+    </p>
+    <p>
+	<strong><i id = "yellow">特別要求:</i></strong><br>
+	<input type="checkbox" name="wanted" value="tissues" checked>餐巾<br>
+	<input type="checkbox" name="wanted" value="canvashopsticks" >木筷子<br>
+	<input type="checkbox" name="wanted" value="dish" >塑膠碟子<br>
+	</p>
+	<p>
+    <input type = "submit" value = "Submit">
+    <input type = "reset" value = "Clear">
+    </p>
+</form></body></html>
